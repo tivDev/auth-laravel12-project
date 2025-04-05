@@ -19,9 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // Example API route
-Route::get('/hello', function () {
+Route::get('/ping', function () {
     return response()->json([
         'success' => 1, 
-        'message' => 'Hello, world!'
+        'message' => 'Hello, world!, this is an API route'
     ]);
 });
